@@ -2,6 +2,7 @@ class PetsController < ApplicationController
 
   get '/pets' do
     @pets = Pet.all
+    # binding.pry
     erb :'/pets/index' 
   end
 
